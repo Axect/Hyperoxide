@@ -1,8 +1,11 @@
 use std::ops::{Add, Index, IndexMut, Mul, Neg, Sub};
-
-use crate::{Vector, FP, LinearAlgebra, Norm, Frobenius, PQ, One, Infinity};
-pub use Shape::{Col, Row};
 use std::mem::swap;
+
+use crate::structure::vector::Vector;
+use crate::operation::fp::FP;
+use crate::algebra::linear_algebra::LinearAlgebra;
+use crate::algebra::linear_algebra::{Norm, Frobenius, PQ, One, Infinity};
+pub use self::Shape::{Col, Row};
 
 #[derive(Debug, Copy, Clone, PartialEq)]
 pub enum Shape {

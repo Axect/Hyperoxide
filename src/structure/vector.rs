@@ -1,4 +1,4 @@
-use crate::FP;
+use crate::operation::fp::FP;
 use std::ops::{Add, Index, IndexMut, Mul, Neg, Sub};
 
 #[derive(Debug, Clone)]

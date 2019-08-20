@@ -1,5 +1,5 @@
 extern crate hyperoxide;
-use hyperoxide::*;
+use hyperoxide::prelude::*;
 
 fn main() {
     let v = Vector::from_vec(vec![1f64, 2f64]);
